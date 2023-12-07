@@ -1,0 +1,7 @@
+numpy==latest
+scipy==latest
+matplotlib==latest
+models==latest
+gradient_descent==latest
+utils==latest
+sgd==latest
