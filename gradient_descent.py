@@ -102,12 +102,12 @@ class GradientDescent:
 
         w = w0.copy()
         n_features = w0.shape[0]
-        steps = 1 / model.lip_coordinates()
         if verbose:
             print("Lauching CGD solver...")
         callback(w)
         for k in range(n_iter + 1):
             for j in range(n_features):
-                w[j] -= steps[j] * model.grad_coordinate(j, w) 
+                step = 1 / model.lip_coordinates(j)
+                w[j] -= step * model.grad_coordinate(j, w) 
             callback(w)
         return w
