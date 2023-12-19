@@ -3,7 +3,7 @@ This repository contains implementations of various stochastic gradient descent 
 
 ### Content 
 
-- `models.py`: Contains the implementation of the linear model.
+- `models.py`: Contains the implementation of the linear and logistic models.
 - `sgd.py`: Contains the implementation of the Stochastic Gradient Descent (SGD) algorithms:
     - SGD
     - SGD with Polyak-Ruppert averaging
